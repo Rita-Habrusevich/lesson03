@@ -78,65 +78,10 @@ while (result !== number) {
 
 // б) числа разбивки дробные с 2 знаками после запятой (4.55, 5.20, 5.25)
 
-//В теории это должно работать если подожать.
-function generateRandomDecimalInRangeFormatted(min, max, places) {
-    let value = (Math.random() * (max - min + 1)) + min;
-    return Number.parseFloat(value).toFixed(places);
-}
 let number2 = 15;
-let numberQty2 = 3;
-let result2 = 0;
-
-while (result2 !== number2) {
-    let ranNumb2 =[];
-    for (let i = 0; i < numberQty2; i++) {
-        ranNumb2.push(generateRandomDecimalInRangeFormatted(1, number2, 2));
-    }
-    result2 = ranNumb2.reduce(function(sum, elem) {
-        return sum + elem;
-    });
-    if (result2 === number2) {
-        console.log(ranNumb2);
-    }
-}
-
-//Были попытки реализовать другой вариант, но наверное это не совсем то. Его я совсем не успеваю закончить. Тут я получаю рандомное число и вычитаю его от заданного.
-
-// function generateRandomDecimalInRangeFormatted(min, max, places) {
-//     let value = (Math.random() * (max - min + 1)) + min;
-//     return Number.parseFloat(value).toFixed(places);
-// }
-//
-// let decimalMaxNumber = 15;
-// let step = 3;
-// let decimalResult = 0;
-
-// while (decimalResult !== decimalNumber) {
-// let ranNumb =[];
-// let previousNumber = 0;
-// for (let i = 0; i < step; i++) {
-//     if (previousNumber) {
-//         let newPreviousNumber = generateRandomDecimalInRangeFormatted(0, previousNumber, 2);
-//         previousNumber = previousNumber - newPreviousNumber;
-//         if (i === step - 1) {
-//             ranNumb.push(previousNumber);
-//         } else {
-//             ranNumb.push(newPreviousNumber);
-//         }
-//     } else {
-//         newPreviousNumber = generateRandomDecimalInRangeFormatted(0, decimalMaxNumber, 2);
-//         ranNumb.push(newPreviousNumber);
-//         previousNumber = decimalMaxNumber - newPreviousNumber;
-//     }
-//     let previousNumber = firstNumber;
-//     let previousNumber = previousNumber - firstNumber;
-//     previousNumber = rest;
-//     }
-//
-//    decimalResult = ranNumb.reduce(function(sum, elem) {
-//        return sum + elem;
-//     });
-//     if (decimalResult === decimalNumber) {
-//      console.log(ranNumb);
-//     }
-// }
+let c = [];
+        let ranNumb1 = (Math.random() * (number2 - 1)).toFixed(2);
+        let ranNumb2 = (Math.random() * (number2 - ranNumb1 - 1)).toFixed(2);
+        let ranNumb3 = number2 - ranNumb1 - ranNumb2;
+        c.push(ranNumb1, ranNumb2, ranNumb3.toFixed(2));
+        console.log(c);
