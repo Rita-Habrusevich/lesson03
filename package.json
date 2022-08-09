@@ -1,11 +1,9 @@
 {
   "name": "repository",
   "version": "1.0.0",
-  "description": "",
+  "description": "step1",
   "main": "node.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rita-Habrusevich/lesson03.git"
@@ -18,5 +16,8 @@
   "homepage": "https://github.com/Rita-Habrusevich/lesson03#readme",
   "dependencies": {
     "fs-extra": "^10.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.24.2"
   }
 }
