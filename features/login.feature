@@ -29,5 +29,5 @@ Background: Navigate to website
     When I click on "*=Docs" element
     When I click on "*=Core Concepts" element
     When I click on "*=Setup Types" element
-    When I click on "div.tabs-container > ul > li:nth-child(2)" element
-    Then I check that " div:nth-child(2) > div > div > pre > code > span:nth-child(1) > span.token.maybe-class-name" displayed in viewport
+    When I click on ".tabs__item:not(.tabs__item--active)" element
+    Then I check that " :nth-child(2) > div > div > pre  code :nth-child(1) .maybe-class-name" displayed in viewport
