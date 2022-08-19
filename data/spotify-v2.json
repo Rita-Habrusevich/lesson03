@@ -1,0 +1,2500 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "album": {
+          "type": "object",
+          "properties": {
+            "uri": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "artists": {
+              "type": "object",
+              "properties": {
+                "totalCount": {
+                  "type": "integer"
+                },
+                "items": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "uri": {
+                          "type": "string"
+                        },
+                        "profile": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name"
+                          ]
+                        },
+                        "visuals": {
+                          "type": "object",
+                          "properties": {
+                            "avatarImage": {
+                              "type": "object",
+                              "properties": {
+                                "sources": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "url": {
+                                          "type": "string"
+                                        },
+                                        "width": {
+                                          "type": "integer"
+                                        },
+                                        "height": {
+                                          "type": "integer"
+                                        }
+                                      },
+                                      "required": [
+                                        "url",
+                                        "width",
+                                        "height"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "url": {
+                                          "type": "string"
+                                        },
+                                        "width": {
+                                          "type": "integer"
+                                        },
+                                        "height": {
+                                          "type": "integer"
+                                        }
+                                      },
+                                      "required": [
+                                        "url",
+                                        "width",
+                                        "height"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "sources"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "avatarImage"
+                          ]
+                        },
+                        "sharingInfo": {
+                          "type": "object",
+                          "properties": {
+                            "shareUrl": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "shareUrl"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "uri",
+                        "profile",
+                        "visuals",
+                        "sharingInfo"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "totalCount",
+                "items"
+              ]
+            },
+            "coverArt": {
+              "type": "object",
+              "properties": {
+                "extractedColors": {
+                  "type": "object",
+                  "properties": {
+                    "colorRaw": {
+                      "type": "object",
+                      "properties": {
+                        "hex": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "hex"
+                      ]
+                    },
+                    "colorLight": {
+                      "type": "object",
+                      "properties": {
+                        "hex": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "hex"
+                      ]
+                    },
+                    "colorDark": {
+                      "type": "object",
+                      "properties": {
+                        "hex": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "hex"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "colorRaw",
+                    "colorLight",
+                    "colorDark"
+                  ]
+                },
+                "sources": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "url": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "url",
+                        "width",
+                        "height"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "url": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "url",
+                        "width",
+                        "height"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "url": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "url",
+                        "width",
+                        "height"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "extractedColors",
+                "sources"
+              ]
+            },
+            "discs": {
+              "type": "object",
+              "properties": {
+                "totalCount": {
+                  "type": "integer"
+                },
+                "items": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "number": {
+                          "type": "integer"
+                        },
+                        "tracks": {
+                          "type": "object",
+                          "properties": {
+                            "totalCount": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "totalCount"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "number",
+                        "tracks"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "totalCount",
+                "items"
+              ]
+            },
+            "tracks": {
+              "type": "object",
+              "properties": {
+                "totalCount": {
+                  "type": "integer"
+                },
+                "items": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "track": {
+                          "type": "object",
+                          "properties": {
+                            "playability": {
+                              "type": "object",
+                              "properties": {
+                                "playable": {
+                                  "type": "boolean"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "playable",
+                                "reason"
+                              ]
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "totalMilliseconds": {
+                                  "type": "integer"
+                                }
+                              },
+                              "required": [
+                                "totalMilliseconds"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "playability",
+                            "duration"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "track"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "totalCount",
+                "items"
+              ]
+            },
+            "releases": {
+              "type": "object",
+              "properties": {
+                "totalCount": {
+                  "type": "integer"
+                },
+                "items": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "totalCount",
+                "items"
+              ]
+            },
+            "type": {
+              "type": "string"
+            },
+            "date": {
+              "type": "object",
+              "properties": {
+                "isoString": {
+                  "type": "string"
+                },
+                "precision": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "isoString",
+                "precision"
+              ]
+            },
+            "playability": {
+              "type": "object",
+              "properties": {
+                "playable": {
+                  "type": "boolean"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "playable",
+                "reason"
+              ]
+            },
+            "label": {
+              "type": "string"
+            },
+            "copyright": {
+              "type": "object",
+              "properties": {
+                "totalCount": {
+                  "type": "integer"
+                },
+                "items": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "text"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "text"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "totalCount",
+                "items"
+              ]
+            },
+            "courtesyLine": {
+              "type": "string"
+            },
+            "saved": {
+              "type": "boolean"
+            },
+            "sharingInfo": {
+              "type": "object",
+              "properties": {
+                "shareUrl": {
+                  "type": "string"
+                },
+                "shareId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shareUrl",
+                "shareId"
+              ]
+            },
+            "moreAlbumsByArtist": {
+              "type": "object",
+              "properties": {
+                "items": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "discography": {
+                          "type": "object",
+                          "properties": {
+                            "popularReleases": {
+                              "type": "object",
+                              "properties": {
+                                "items": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "releases": {
+                                          "type": "object",
+                                          "properties": {
+                                            "items": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "uri": {
+                                                      "type": "string"
+                                                    },
+                                                    "name": {
+                                                      "type": "string"
+                                                    },
+                                                    "date": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "year": {
+                                                          "type": "integer"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "year"
+                                                      ]
+                                                    },
+                                                    "coverArt": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sources": {
+                                                          "type": "array",
+                                                          "items": [
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "url": {
+                                                                  "type": "string"
+                                                                },
+                                                                "width": {
+                                                                  "type": "integer"
+                                                                },
+                                                                "height": {
+                                                                  "type": "integer"
+                                                                }
+                                                              },
+                                                              "required": [
+                                                                "url",
+                                                                "width",
+                                                                "height"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "sources"
+                                                      ]
+                                                    },
+                                                    "playability": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "playable": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "reason": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "playable",
+                                                        "reason"
+                                                      ]
+                                                    },
+                                                    "sharingInfo": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "shareId": {
+                                                          "type": "string"
+                                                        },
+                                                        "shareUrl": {
+                                                          "type": "string"
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "shareId",
+                                                        "shareUrl"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "id",
+                                                    "uri",
+                                                    "name",
+                                                    "date",
+                                                    "coverArt",
+                                                    "playability",
+                                                    "sharingInfo"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "items"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "releases"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "items"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "popularReleases"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "discography"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "items"
+              ]
+            }
+          },
+          "required": [
+            "uri",
+            "name",
+            "artists",
+            "coverArt",
+            "discs",
+            "tracks",
+            "releases",
+            "type",
+            "date",
+            "playability",
+            "label",
+            "copyright",
+            "courtesyLine",
+            "saved",
+            "sharingInfo",
+            "moreAlbumsByArtist"
+          ]
+        }
+      },
+      "required": [
+        "album"
+      ]
+    },
+    "extensions": {
+      "type": "object",
+      "properties": {
+        "cacheControl": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "integer"
+            },
+            "hints": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "version",
+            "hints"
+          ]
+        }
+      },
+      "required": [
+        "cacheControl"
+      ]
+    }
+  },
+  "required": [
+    "data",
+    "extensions"
+  ]
+}
