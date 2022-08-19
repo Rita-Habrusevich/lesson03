@@ -1,0 +1,1835 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "artist": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "uri": {
+              "type": "string"
+            },
+            "profile": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "relatedContent": {
+              "type": "object",
+              "properties": {
+                "relatedArtists": {
+                  "type": "object",
+                  "properties": {
+                    "totalCount": {
+                      "type": "integer"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string"
+                            },
+                            "profile": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            },
+                            "visuals": {
+                              "type": "object",
+                              "properties": {
+                                "avatarImage": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sources": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "url": {
+                                              "type": "string"
+                                            },
+                                            "width": {
+                                              "type": "integer"
+                                            },
+                                            "height": {
+                                              "type": "integer"
+                                            }
+                                          },
+                                          "required": [
+                                            "url",
+                                            "width",
+                                            "height"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "sources"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "avatarImage"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "uri",
+                            "profile",
+                            "visuals"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "totalCount",
+                    "items"
+                  ]
+                }
+              },
+              "required": [
+                "relatedArtists"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "uri",
+            "profile",
+            "relatedContent"
+          ]
+        }
+      },
+      "required": [
+        "artist"
+      ]
+    },
+    "extensions": {
+      "type": "object",
+      "properties": {
+        "cacheControl": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "integer"
+            },
+            "hints": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "version",
+            "hints"
+          ]
+        }
+      },
+      "required": [
+        "cacheControl"
+      ]
+    }
+  },
+  "required": [
+    "data",
+    "extensions"
+  ]
+}
