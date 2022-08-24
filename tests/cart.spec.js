@@ -9,7 +9,7 @@ test.describe('Checking the shopping cart', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('https://www.wildberries.by/catalog/muzhchinam/odezhda/verhnyaya-odezhda');
         element = await new PageFactory(page);
-        I = new BaseElements (page);
+        I = await new BaseElements (page);
     });
 
     test.afterEach(async ({ page }) => {
