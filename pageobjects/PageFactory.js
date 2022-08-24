@@ -6,7 +6,7 @@ const ProductPage = require('./ProductPage');
 const CartPage = require('./CartPage');
 const CatalogPage = require('./CatalogPage');
 
- class PageFactory {
+class PageFactory {
   constructor(page){
    this.page = page;
    this.mainPage = new MainPage (page);

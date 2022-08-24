@@ -2,21 +2,21 @@ const { test, expect } = require('@playwright/test');
 const PageFactory  = require('../pageobjects/PageFactory');
 const BaseElements  = require('../helpers/BaseElements');
 
-test.beforeEach(async ({ page }) => {
-    await page.setViewportSize ({width: 1920, height: 1200,});
-    await page.goto('https://www.wildberries.by/catalog/muzhchinam/odezhda/verhnyaya-odezhda');
-});
-
-test.afterEach(async ({ page }) => {
-    await page.close();
-});
-
-
 test.describe('Checking the shopping cart', () => {
+    let element = {};
+    let I = {};
 
-    test('Add product to cart from catalog page', async ({ page }) => {
-         const element = new PageFactory(page);
-         const I = new BaseElements (page);
+    test.beforeEach(async ({ page }) => {
+        await page.goto('https://www.wildberries.by/catalog/muzhchinam/odezhda/verhnyaya-odezhda');
+        element = await new PageFactory(page);
+        I = new BaseElements (page);
+    });
+
+    test.afterEach(async ({ page }) => {
+        await page.close();
+    });
+
+    test('Add product to cart from catalog page', async () => {
          const firstItem = await (element.catalogPage.firstItemOnThePage);
          const firstSize = await (element.catalogPage.firstSizeButton);
          await element.catalogPage.addProductToCart(firstItem, firstSize);
@@ -24,9 +24,7 @@ test.describe('Checking the shopping cart', () => {
          await expect(element.cartPage.qtyProductsInCart).toHaveCount(1)
     });
 
-    test('Add product to cart from product page', async ({ page }) => {
-        const element = new PageFactory(page);
-        const I = new BaseElements (page);
+    test('Add product to cart from product page', async () => {
         await I.click(element.catalogPage.firstItemOnThePage);
         const firstAvailableSize = await (element.productPage.allAvailableSizes).first();
         await element.productPage.addProductToCart(firstAvailableSize);
@@ -34,9 +32,7 @@ test.describe('Checking the shopping cart', () => {
         await expect(element.cartPage.qtyProductsInCart).toHaveCount(1)
     });
 
-    test('Add product to cart from quick view', async ({ page }) => {
-        const element = new PageFactory(page);
-        const I = new BaseElements (page);
+    test('Add product to cart from quick view', async () => {
         await I.hover(element.catalogPage.firstItemOnThePage);
         await I.click(element.catalogPage.quickView);
         const firstAvailableSize = await (element.productCardPopUp.allAvailableSizes).first();
@@ -45,9 +41,7 @@ test.describe('Checking the shopping cart', () => {
         await expect(element.cartPage.qtyProductsInCart).toHaveCount(1)
     });
 
-    test('Change the quantity of goods in the cart', async ({ page }) => {
-        const element = new PageFactory(page);
-        const I = new BaseElements (page);
+    test('Change the quantity of goods in the cart', async () => {
         await I.click(element.catalogPage.firstItemOnThePage);
         const firstAvailableSize = await (element.productPage.allAvailableSizes).first();
         await element.productPage.addProductToCart(firstAvailableSize);
@@ -56,9 +50,7 @@ test.describe('Checking the shopping cart', () => {
         await expect(element.cartPage.twoProductsInTheCart).toBeVisible();
     });
 
-    test('Remove all items from cart', async ({ page }) => {
-        const element = new PageFactory(page);
-        const I = new BaseElements (page);
+    test('Remove all items from cart', async () => {
         await I.click(element.catalogPage.firstItemOnThePage);
         const firstAvailableSize = await (element.productPage.allAvailableSizes).first();
         await element.productPage.addProductToCart(firstAvailableSize);
@@ -67,9 +59,7 @@ test.describe('Checking the shopping cart', () => {
         await expect(element.cartPage.emptyCartMsg).toHaveText("В корзине пока ничего нет")
     });
 
-    test('Change shipping address from cart', async ({ page }) => {
-        const element = new PageFactory(page);
-        const I = new BaseElements (page);
+    test('Change shipping address from cart', async () => {
         await I.click(element.catalogPage.firstItemOnThePage);
         const firstAvailableSize = await (element.productPage.allAvailableSizes).first();
         await element.productPage.addProductToCart(firstAvailableSize);
