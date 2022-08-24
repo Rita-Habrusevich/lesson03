@@ -9,7 +9,7 @@ test.describe('Website configuration for user', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('https://www.wildberries.by/');
         element = await new PageFactory(page);
-        I = new BaseElements (page);
+        I = await new BaseElements (page);
     });
 
     test.afterEach(async ({ page }) => {
@@ -65,5 +65,11 @@ test.describe('Website configuration for user', () => {
          await I.click(element.mainPage.nextButton);
          const secondSlideBanner = await I.get(element.mainPage.secondSlideBanner);
          await expect (secondSlideBanner).toBeVisible();
+    });
+
+    test('Check pagination on product page', async ({ page }) => {
+        await page.goto('https://www.wildberries.by/catalog/muzhchinam/odezhda/bryuki-i-shorty');
+        await I.click(element.catalogPage.paginatiya);
+        await expect(page).toHaveURL('https://www.wildberries.by/catalog/muzhchinam/odezhda/bryuki-i-shorty?sort=popular&page=2');
     });
 });

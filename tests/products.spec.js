@@ -2,14 +2,14 @@ const { test, expect } = require('@playwright/test');
 const PageFactory  = require('../pageobjects/PageFactory');
 const BaseElements  = require('../helpers/BaseElements');
 
-test.describe('Website configuration for user', () => {
+test.describe('Checking product and catalog pages', () => {
     let element = {};
     let I = {};
 
     test.beforeEach(async ({ page }) => {
         await page.goto('https://www.wildberries.by/catalog/zhenshchinam/odezhda/dzhinsy-dzhegginsy');
         element = await new PageFactory(page);
-        I = new BaseElements (page);
+        I = await new BaseElements (page);
     });
 
     test.afterEach(async ({ page }) => {
@@ -48,11 +48,5 @@ test.describe('Website configuration for user', () => {
          await I.click(element.productPage.nextColor);
          const blackProductColor = await I.get(element.productPage.blackProductColor);
          await expect (blackProductColor).toBeVisible();
-    });
-
-    test('Check pagination on product page', async ({ page }) => {
-        await page.goto('https://www.wildberries.by/catalog/muzhchinam/odezhda/bryuki-i-shorty');
-        await I.click(element.catalogPage.paginatiya);
-        await expect(page).toHaveURL('https://www.wildberries.by/catalog/muzhchinam/odezhda/bryuki-i-shorty?sort=popular&page=2');
     });
 });
