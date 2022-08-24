@@ -16,26 +16,26 @@ test.describe('Checking product and catalog pages', () => {
         await page.close();
     });
 
-    test('Check product sorting by category "Jeggings"', async ({ page }) => {
+    test('Check product sorting by category "Jeggings"', async () => {
          const jeggingsCategory = await (element.catalogPage.jeggingsCheckboxFilter);
          await element.catalogPage.getFilter(jeggingsCategory);
          await expect (element.catalogPage.firstProductTitle).toHaveText("Джеггинсы")
     });
 
-    test('Check product sorting by brand "Mango"', async ({ page }) => {
+    test('Check product sorting by brand "Mango"', async () => {
          const mangoBrend = await (element.catalogPage.mangoCheckboxFilter);
          await element.catalogPage.getFilter(mangoBrend);
          await expect (element.catalogPage.firstProductBrend).toHaveText("Mango")
     });
 
-    test('Sort products by rating', async ({ page }) => {
+    test('Sort products by rating', async () => {
          const sortingByRating = await (element.catalogPage.raitSorting);
          await element.catalogPage.getFilter(sortingByRating);
          const raitSorting = await I.get(element.catalogPage.sortingByRating);
          await expect (raitSorting).toBeVisible();
     });
 
-    test('Sort products by price', async ({ page }) => {
+    test('Sort products by price', async () => {
          const sortingByPrice = await (element.catalogPage.priceSorting);
          await element.catalogPage.getFilter(sortingByPrice);
          const priceSorting = await I.get(element.catalogPage.sortingByPrice);
