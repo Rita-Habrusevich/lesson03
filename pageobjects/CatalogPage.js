@@ -27,11 +27,6 @@ class CatalogPage extends BasePage {
         await size.waitFor('visible');
         await size.click();
     }
-
-    async getFilter(value) {
-        await value.waitFor('visible');
-        await value.click();
-    }
 }
 
 module.exports = CatalogPage;

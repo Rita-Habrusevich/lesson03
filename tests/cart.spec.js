@@ -3,8 +3,8 @@ const PageFactory  = require('../pageobjects/PageFactory');
 const BaseElements  = require('../helpers/BaseElements');
 
 test.describe('Checking the shopping cart', () => {
-    let element = {};
-    let I = {};
+    let element;
+    let I;
 
     test.beforeEach(async ({ page }) => {
         await page.goto('https://www.wildberries.by/catalog/muzhchinam/odezhda/verhnyaya-odezhda');
